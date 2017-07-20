@@ -30,174 +30,214 @@
 	 
 	
 <style>
-.adbstyle {list-style-type:none;overflow:hidden; margin: 10px 0px!important; padding:0px!important;} 
-.adbstyle li {margin:0px auto 10px auto; clear:both; color:#000; font-family:helvetica; font-size:12px; border-bottom:1px solid #eee; overflow:hidden; position:relative} 
-.adbstyle li a { color:#666; text-decoration:none; } 
-.adbstyle i{color:#999; padding-right:5px; } 
-.adbstyle .iline{line-height:2em; margin-top:3px;} 
-.adbstyle .icontent{line-height:1.5em; margin-top:5px;} 
-.adbstyle div span{margin:0 5px 0 0; display:inline-block;font-weight: normal; } 
-.adbstyle .title {font-family:oswald; font-size: 18px; color: #000000; font-weight:normal; text-decoration:none;} 
-.adbstyle .title:hover, .adbstyle .itotal a:hover  {color:#333; text-decoration:none;} 
-.adbstyle .iedit a{text-decoration:none; color:#999; cursor:pointer} 
-.adbstyle .iedit:before, .adbstyle .iauthor:before, .adbstyle .itag:before, .adbstyle .icomments:before, .adbstyle .idate:before, .adbstyle .itotal span:before{font-family:fontAwesome; position:relative; padding-right:8px; color:#999;} 
-.adbstyle .iauthorpic{width: 17px;height: 17px;border-radius: 50%; 
-float: none; display: inline-block; margin:0px 0px 0px 0px; padding-right:3px; position:relative; top:3px;} 
-.adbstyle .itag{    color: #fff;position: absolute;left: 7px;top: 8px;display: inline-block;font-size: 11px;width: 130px; height:22px;    overflow: hidden;} 
-.adbstyle .itag a{background:#6770B7;text-decoration:none;color:#fff;padding:4px 5px;text-transform:capitalize;line-height: 2em;font-family: arial; 
-    font-size: 11px;border:1px solid #6770B7;} 
-.adbstyle .itag a:hover{background:#222; color:#eee; text-decoration:none;} 
-.iFeatured{overflow:hidden;position:relative;float:left;margin:0 5px 10px 0;padding:0;} 
-.iFeatured a {background: url() 0 0;padding: 4px;display: block;} 
-.iFeatured img{width:175px;height:120px;-moz-transition:all .3s;-webkit-transition:all .3s;transition:all .3s;     border-radius: 2px;} 
-.iFeatured:hover img{ opacity:1;   -moz-transform:scale(1.4);-webkit-transform:scale(1.4);transform:scale(1.4)} 
-.adbstyle .icomments a{color:#0080ff; font-family: arial;font-size:12px;} 
-.adbstyle .icomments a:hover{text-decoration:underline} 
-.adbstyle .icomments:before {content:'\f086'; padding:0px 3px 0px 7px; color:#84DB06;} 
-.adbstyle .idate:before {content:'\f073';padding-right:3px} 
-.adbstyle .iedit:before {content:'\f040';} 
-.adbstyle .imore {font-size:16px; font-weight:bold; text-decoration:none; color:#666;} 
-.adbstyle .itotal {color:#333;  padding:5px 0px; } 
-.adbstyle .itotal a {font-family:oswald, arial; font-size:12px; font-weight:normal; color:#0080ff; text-decoration:none} 
-.adbstyle .itotal span:before {content:'\f07c';} 
-.adbstyle .itotal span font {padding:0px 3px; color:#333; font-family:georgia; font-size:15px; font-weight:bold} 
-.adbstyle .itag a{
-	display:none;
-	}	
+/*------Recent Posts Gadget By STCnetwork.org--------*/
+.mbtlist {list-style-type:none;overflow:hidden; margin: 10px 0px!important; width:300px; padding:0px!important;}
+.mbtlist li {margin:0px auto 10px auto; clear:both; color:#666; font-family:helvetica; font-size:12px; border-bottom:1px solid #eee; overflow:hidden; position:relative}
+.mbtlist li a { color:#666; text-decoration:none; }
+.mbtlist i{color:#999; padding-right:5px; }
+.mbtlist .iline{line-height:2em; margin-top:3px;}
+.mbtlist .icontent{line-height:1.5em; margin-top:5px;}
+.mbtlist div span{margin:0 5px 0 0; display:inline-block;font-weight: normal; }
+.mbtlist .mbttitle {font-family:oswald; font-size:13px; color:#666; font-weight:normal; text-decoration:none;}
+.mbtlist .mbttitle:hover, .mbtlist .itotal a:hover  {color:#333; text-decoration:none;}
+.mbtlist .iedit a{text-decoration:none; color:#999; cursor:pointer}
+.mbtlist .iedit:before, .mbtlist .iauthor:before, .mbtlist .itag:before, .mbtlist .icomments:before, .mbtlist .idate:before, .mbtlist .itotal span:before{font-family:fontAwesome; position:relative; padding-right:8px; color:#999;}
+.mbtlist .iauthorpic{width: 17px;height: 17px;border-radius: 50%;
+float: none; display: inline-block; margin:0px 0px 0px 0px; padding-right:3px; position:relative; top:3px;}
+.mbtlist .itag{    color: #fff;position: absolute;left: 7px;top: 8px;display: inline-block;font-size: 11px;width: 130px; height:22px;    overflow: hidden;}
+.mbtlist .itag a{background:#000;background:rgba(0,0,0,0.7);text-decoration:none;color:#fff;padding:4px 5px;text-transform:capitalize;line-height: 2em;font-family: arial;
+    font-size: 11px;border:1px solid #333;}
+.mbtlist .itag a:hover{background:#222; color:#eee; text-decoration:none;}
+.iFeatured{overflow:hidden;position:relative;float:left;margin:0 5px 10px 0;padding:0;}
+.iFeatured a {background: url(http://3.bp.blogspot.com/-U2SNjBF_hE8/VLFfl4mJmtI/AAAAAAAAOYs/nDK3GKUJFr4/s100/mbt-bg1.png) 0 0;padding: 7px 7px 8px 7px;display: block;}
+.iFeatured img{width:135px;height:80px;-moz-transition:all .3s;-webkit-transition:all .3s;transition:all .3s;     border-radius: 2px;}
+.iFeatured:hover img{ opacity:1;   -moz-transform:scale(1.4);-webkit-transform:scale(1.4);transform:scale(1.4)}
+.mbtlist .icomments a{color:#0080ff; font-family: arial;font-size:12px;}
+.mbtlist .icomments a:hover{text-decoration:underline}
+.mbtlist .icomments:before {content:'\f086'; padding:0px 3px 0px 7px; color:#84DB06;}
+.mbtlist .idate:before {content:'\f073';padding-right:3px}
+.mbtlist .iedit:before {content:'\f040';}
+.mbtlist .imore {font-size:16px; font-weight:bold; text-decoration:none; color:#666;}
+.mbtlist .itotal {color:#333;  padding:5px 0px; }
+.mbtlist .itotal a {font-family:oswald, arial; font-size:12px; font-weight:normal; color:#0080ff; text-decoration:none}
+.mbtlist .itotal span:before {content:'\f07c';}
+.mbtlist .itotal span font {padding:0px 3px; color:#333; font-family:georgia; font-size:15px; font-weight:bold} 
 </style>
 
 </head>
 <body>
  
+
+
 	
-<script type="text/javascript">
-var ListBlogLink = "https://turismoecuadorturismo.blogspot.com/"; 
-var ListCount = 4; 
-var ListLabel = "Ecuador"; 
-var ChrCount = 150; 
-var TitleCount = 66; 
-var ImageSize = 200; 
-var showcomments = "off"; 
-var showdate = "off"; 
-var showauthor = "off"; 
-var showthumbnail = "on"; 
-var showlabel = "on"; 
-var showcontent = "on"; 
-var showTotal = "on";
-function adbstyle(json) { 
-document.write('<ul class="adbstyle">'); 
-for (var i = 0; i < ListCount; i++) 
-{
-var listing= ListImage = ListUrl = ListTitle = ListImage = ListContent = ListConten = ListAuthor = ListTag = ListDate = ListUpdate = ListComments = thumbUrl = TotalPosts = sk = AuthorPic= ListMonth = Y = D = M = m = YY = DD = MM = mm = TT =  "";
-if (json.feed.entry[i].category != null) 
-{ 
-for (var k = 0; k < json.feed.entry[i].category.length; k++) { 
-ListTag += "<a href='"+ListBlogLink+"/search/label/"+json.feed.entry[i].category[k].term+"'>"+json.feed.entry[i].category[k].term+"</a>"; 
-if(k < json.feed.entry[i].category.length-1) 
-{ ListTag += " ";} 
-}}
-for (var j = 0; j < json.feed.entry[i].link.length; j++) { 
-      if (json.feed.entry[i].link[j].rel == 'alternate') { 
-        break; 
-      } 
-    } 
-ListUrl= "'" + json.feed.entry[i].link[j].href + "'";
-TotalPosts = json.feed.openSearch$totalResults.$t; 
-if (json.feed.entry[i].title!= null) 
-{ 
-ListTitle= json.feed.entry[i].title.$t.substr(0, TitleCount); 
-} 
-if (json.feed.entry[i].thr$total) 
-{ 
-ListComments= "<a href='"+json.feed.entry[i].link[j].href+"#comment-form'>"+json.feed.entry[i].thr$total.$t+"</a>"; 
-} 
-ListAuthor= json.feed.entry[i].author[0].name.$t.split(" "); 
-ListAuthor=ListAuthor.slice(0, 1).join(" ");
-AuthorPic = json.feed.entry[i].author[0].gd$image.src; 
-ListConten = json.feed.entry[i].content.$t; 
-ListContent= ListConten.replace(/(<([^>]+)>)/ig,"").substring(0, ChrCount);
-ListMonth= ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-ListDate= json.feed.entry[i].published.$t.substring(0,10);
-                         Y = ListDate.substring(0, 4); 
-                        m = ListDate.substring(5, 7); 
-                         D = ListDate.substring(8, 10); 
-                         M = ListMonth[parseInt(m - 1)];                       
-ListUpdate= json.feed.entry[i].updated.$t.substring(0, 16);
-                         YY = ListUpdate.substring(0, 4); 
-                        mm = ListUpdate.substring(5, 7); 
-                         DD = ListUpdate.substring(8, 10); 
-                         TT = ListUpdate.substring(11, 16); 
-                         MM = ListMonth[parseInt(mm - 1)];   
-if (json.feed.entry[i].content.$t.match(/youtube\.com.*(\?v=|\/embed\/)(.{11})/) != null) 
-{
-    var youtube_id = json.feed.entry[i].content.$t.match(/youtube\.com.*(\?v=|\/embed\/)(.{11})/).pop(); 
-    
-    if (youtube_id.length == 11) { 
-        var ListImage = "'//img.youtube.com/vi/"+youtube_id+"/0.jpg'"; 
-        } 
-}
-else if (json.feed.entry[i].media$thumbnail) 
-{ 
-thumbUrl = json.feed.entry[i].media$thumbnail.url; 
-sk= thumbUrl.replace("/s72-c/","/s"+ImageSize+"/"); 
-ListImage= "'" + sk.replace("?imgmax=800","") + "'"; 
-}
-else if (json.feed.entry[i].content.$t.match(/src=(.+?[\.jpg|\.gif|\.png]")/) != null) 
-{ 
-ListImage =  json.feed.entry[i].content.$t.match(/src=(.+?[\.jpg|\.gif|\.png]")/)[1]; 
-}
-else 
-{ 
-ListImage= "'https://3.bp.blogspot.com/-6sQN95-4B8I/WXEPq4d0FeI/AAAAAAAAAeA/rvYc7weRCYsgzT2jp2qIvXSPxRea60hjgCLcBGAs/s1600/blogger.png'"; 
-} 
-document.write( "<li class='node"+[i]+"' >"); 
-if (showthumbnail == 'on'){ 
-document.write("<div class='iFeatured'><a  href=" 
-+ ListUrl+ 
-  "target='_blank'><img src=" 
-+ListImage+ 
-"/></a></div>"); 
-} 
-if (showlabel == 'on'){ 
-document.write("<span class='itag'>" 
-+ListTag + 
-"</span>"); 
-} 
-document.write("<a class='title' href=" 
-+ ListUrl+ 
-"target='_blank'>" 
-+ ListTitle+ 
-"</a><div class='iline'>");
-if (showauthor == 'on'){ 
-document.write("<span class='iauthor'><img class='iauthorpic' src='"+AuthorPic+"'/>" 
-+ListAuthor+ 
-"</span>"); 
-} 
-if (showcomments == 'on'){ 
-document.write("<span class='icomments'>" 
-+ListComments + 
-"</span> "); 
-}
-if (showdate == 'on'){ 
-document.write("<span class='idate'>" 
-+ M + 
-" " 
-+ D + 
-"</span>"); 
-}
-if (showcontent == 'on'){ 
-document.write("<div class='icontent'>" 
-+ListContent + 
-"...</div> "); 
-} 
-document.write("</div></li>");
-}if (showTotal == 'on'){ 
-document.write("<div class='itotal'><span> <a href='"+ListBlogLink+"/search/label/"+ListLabel+"'target='_blank'>View all <font>"+TotalPosts+"</font> posts in  →  " +ListLabel+" </a></span></div>"); 
-} 
-document.write("</ul>"); 
-}
-document.write("<script src='"+ListBlogLink+"/feeds/posts/default/-/"+ListLabel+"?alt=json-in-script&callback=adbstyle'></"+"script>"); 
-</script>
+
+    <script type="text/javascript">
+
+    //#################### Default Settings
+    var ListBlogLink = "https://turismoecuadorturismo.blogspot.com/";
+    var ListCount = 3;
+    var ListLabel = "Ecuador";
+    var ChrCount = 45;
+    var TitleCount = 66;
+    var ImageSize = 200;
+    var showcomments = "on";
+    var showdate = "off";
+    var showauthor = "on";
+    var showthumbnail = "on";
+    var showlabel = "on";
+    var showcontent = "off";
+    var showTotal = "on";
+
+    //################ Function Start
+    function mbtlist(json) {
+    document.write('<ul class="mbtlist">');
+    for (var i = 0; i < ListCount; i++)
+    {
+
+    //################### Variables Declared
+    var listing= ListImage = ListUrl = ListTitle = ListImage = ListContent = ListConten = ListAuthor = ListTag = ListDate = ListUpdate = ListComments = thumbUrl = TotalPosts = sk = AuthorPic= ListMonth = Y = D = M = m = YY = DD = MM = mm = TT =  "";
+
+    //################### Category
+    if (json.feed.entry[i].category != null)
+    {
+    for (var k = 0; k < json.feed.entry[i].category.length; k++) {
+    ListTag += "<a href='"+ListBlogLink+"/search/label/"+json.feed.entry[i].category[k].term+"'>"+json.feed.entry[i].category[k].term+"</a>";
+    if(k < json.feed.entry[i].category.length-1)
+    { ListTag += " ";}
+    }}
+
+    //################### URL
+    for (var j = 0; j < json.feed.entry[i].link.length; j++) {
+          if (json.feed.entry[i].link[j].rel == 'alternate') {
+            break;
+          }
+        }
+    ListUrl= "'" + json.feed.entry[i].link[j].href + "'";
+
+    //################### Info
+    TotalPosts = json.feed.openSearch$totalResults.$t;
+    if (json.feed.entry[i].title!= null)
+    {
+    ListTitle= json.feed.entry[i].title.$t.substr(0, TitleCount);
+    }
+    if (json.feed.entry[i].thr$total)
+    {
+    ListComments= "<a href='"+json.feed.entry[i].link[j].href+"#comment-form'>"+json.feed.entry[i].thr$total.$t+"</a>";
+    }
+    ListAuthor= json.feed.entry[i].author[0].name.$t.split(" ");
+    ListAuthor=ListAuthor.slice(0, 1).join(" ");
+
+    AuthorPic = json.feed.entry[i].author[0].gd$image.src;
+    //################### Content Check
+
+    ListConten = json.feed.entry[i].content.$t;
+    ListContent= ListConten.replace(/(<([^>]+)>)/ig,"").substring(0, ChrCount);
+
+    //################### Date Format
+
+    ListMonth= ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+    ListDate= json.feed.entry[i].published.$t.substring(0,10);
+
+                             Y = ListDate.substring(0, 4);
+                            m = ListDate.substring(5, 7);
+                             D = ListDate.substring(8, 10);
+                             M = ListMonth[parseInt(m - 1)];                       
+
+    ListUpdate= json.feed.entry[i].updated.$t.substring(0, 16);
+
+                             YY = ListUpdate.substring(0, 4);
+                            mm = ListUpdate.substring(5, 7);
+                             DD = ListUpdate.substring(8, 10);
+                             TT = ListUpdate.substring(11, 16);
+                             MM = ListMonth[parseInt(mm - 1)];   
+
+    //################### Thumbnail Check
+    // YouTube scan
+
+    if (json.feed.entry[i].content.$t.match(/youtube\.com.*(\?v=|\/embed\/)(.{11})/) != null)
+    {
+
+        var youtube_id = json.feed.entry[i].content.$t.match(/youtube\.com.*(\?v=|\/embed\/)(.{11})/).pop();
+       
+        if (youtube_id.length == 11) {
+            var ListImage = "'//img.youtube.com/vi/"+youtube_id+"/0.jpg'";
+            }
+    }
+
+    else if (json.feed.entry[i].media$thumbnail)
+    {
+    thumbUrl = json.feed.entry[i].media$thumbnail.url;
+    sk= thumbUrl.replace("/s72-c/","/s"+ImageSize+"/");
+    ListImage= "'" + sk.replace("?imgmax=800","") + "'";
+    }
+
+    else if (json.feed.entry[i].content.$t.match(/src=(.+?[\.jpg|\.gif|\.png]")/) != null)
+    {
+    // Support For 3rd Party Images
+    ListImage =  json.feed.entry[i].content.$t.match(/src=(.+?[\.jpg|\.gif|\.png]")/)[1];
+    }
+
+    else
+    {
+    ListImage= "'http://4.bp.blogspot.com/-HALLtgFeep0/VfryhQ0C5oI/AAAAAAAAPcY/77mSGND4q84/s200/Icon.png'";
+    }
+    //################### Printing List
+
+    document.write( "<li class='node"+[i]+"' >");
+    if (showthumbnail == 'on'){
+    document.write("<div class='iFeatured'><a  href="
+    + ListUrl+
+      "><img src="
+    +ListImage+
+    "/></a></div>");
+    }
+    if (showlabel == 'on'){
+    document.write("<span class='itag'>"
+    +ListTag +
+    "</span>");
+    }
+    document.write("<a class='mbttitle' href="
+    + ListUrl+
+    ">"
+    + ListTitle+
+    "</a><div class='iline'>");
+
+    if (showauthor == 'on'){
+    document.write("<span class='iauthor'><img class='iauthorpic' src='"+AuthorPic+"'/>"
+    +ListAuthor+
+    "</span>");
+    }
+    if (showcomments == 'on'){
+    document.write("<span class='icomments'>"
+    +ListComments +
+    "</span> ");
+    }
+
+    if (showdate == 'on'){
+    document.write("<span class='idate'>"
+    + M +
+    " "
+    + D +
+    "</span>");
+    }
+
+    if (showcontent == 'on'){
+    document.write("<div class='icontent'>"
+    +ListContent +
+    "...</div> ");
+    }
+    document.write("</div></li>");
+
+    }if (showTotal == 'on'){
+    document.write("<div class='itotal'><span> <a href='"+ListBlogLink+"/search/label/"+ListLabel+"'>View all <font>"+TotalPosts+"</font> posts in  →  " +ListLabel+" </a></span></div>");
+    }
+    document.write("</ul>");
+    }
+
+    document.write("<script src='"+ListBlogLink+"/feeds/posts/default/-/"+ListLabel+"?alt=json-in-script&callback=mbtlist'></"+"script>");
+    </script>
+
   
 	
 
