@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Terminal Aeroportuaria de Guayaquil</title>
+<meta content='width=device-width, initial-scale=1' name='viewport'>
+<link href="http://www.tagsa.aero/n_css/jjoestilo.css" rel="stylesheet" type="text/css">
+<script src="http://www.tagsa.aero/n_js/varias.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://www.tutiempo.net/widget/eltiempo_RyBwbxtBdIAa2aeA7fqjjjjjj9aA9f2"></script>
+<style>
+
+iframe{border:0}
+
+
+</style>
+
+</head>
+<body>
+
+<div class="cuerpocentral">
+
+<h1>Vuelos del d&iacute;a</h1>
+
+<div class="contacto">
+<p>Si desea buscar un vuelo en part&iacute;cular, dir&iacute;gase a la <a href="vuelosbusqueda.html">B&uacute;squeda de Vuelos</a>. &rarr;</p>
+</div>
+
+<div class='vuelosunificados'>
+<p class='selectflight'>Seleccione entre <strong>Arribos</strong> y <strong>Partidas</strong>:</p><div style='width:440px; margin:0 auto;'><p id='vuen1' class='vuelocategoria vunac vunac2'></p><p id='vuei1' class='vuelocategoria vuint'></p><a href='http://www.tagsa.aero/nuarribonac.aspx' target='framevuelos' id='vue1' class='current' onClick='act1()' >Arribos</a><a href='http://www.tagsa.aero/nupartidanac.aspx' target='framevuelos' id='vue2' onClick='act2()'>Partidas</a><a href='http://www.tagsa.aero/nuarriboint.aspx' target='framevuelos' id='vue3' onClick='act3()'>Arribos</a><a href='http://www.tagsa.aero/nupartidaint.aspx' target='framevuelos' id='vue4' onClick='act4()'>Partidas</a></div><iframe src='http://www.tagsa.aero/nuarribonac.aspx' width='585' height='600' name='framevuelos'></iframe>
+<p class="advertencia-aerolineas">Recuerde que la informaci&oacute;n de vuelos es proporcionada por las aerol&iacute;neas. Si tiene alguna duda por favor contáctese directamente con la aerol&iacute;nea encargada de su vuelo.</p>
+</div>
+
+<div class="vuelosmoviles">
+<ul>
+<li><a href="nuarribonac.aspx">Arribos Nacionales</a></li>
+<li><a href="nupartidanac.aspx">Partidas Nacionales</a></li>
+<li><a href="nuarriboint.aspx">Arribos Internacionales</a></li>
+<li><a href="nupartidaint.aspx">Partidas Internacionales</a></li>
+</ul>
+</div>
+
+</div>
+
+
+</body>
+</html>
