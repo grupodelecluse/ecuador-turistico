@@ -111,16 +111,7 @@ window.onload=DisplayTime;
   
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
-  <script>
-    DivTutiempo=document.getElementById('TT_RyBwbxtBdIAa2aeA7fqjjjjjj9aA9f2');
-if(DivTutiempo)
-{
-DivTutiempo.style.cssText = 'width:88px; height:20px; color:#000000; overflow:hidden;';
-DivTutiempo.innerHTML = '<iframe id="TTF_RyBwbxtBdIAa2aeA7fqjjjjjj9aA9f2" src="http://www.tutiempo.net/V4/widget/tt_Mnx8MzgyNjI2fG58bnxufDU2NjA4fDIwfDEwfDF8MXwxfDB8MjV8bnxufG58fHx8fDAwMDAwMHwzNHwyM3wyMHw4OHwyMHwyM3wzNHwxNHwxNHwyOXw1MnwyNnxpYnwxfA%2C%2C" frameborder="0" scrolling="no" width="100%" height="100%" allowtransparency="allowtransparency" style="overflow:hidden;"></iframe>';
-}
-else {alert("Error en la carga del API del tiempo\nEl cÃ³digo introducido no es correcto\nPara mas informaciÃ³n: www.tutiempo.net");}
-    </script>
-  
+   
 <style>
 
 iframe{border:0}
@@ -1042,6 +1033,24 @@ a.vueloshomelink {
 </head>
 <body>
 
+	<div class="widgets">
+<ul>
+<!-- webim button -->
+<li class="livechat"><a href="http://www.tagsa.aero:81/webim/client.php?locale=sp" target="_blank" onclick="if(navigator.userAgent.toLowerCase().indexOf('opera') != -1 &amp;&amp; window.event.preventDefault) window.event.preventDefault();this.newWindow = window.open('http://www.tagsa.aero:81/webim/client.php?locale=sp&amp;url='+escape(document.location.href)+'&amp;referrer='+escape(document.referrer), 'webim', 'toolbar=0,scrollbars=0,location=0,status=1,menubar=0,width=860,height=480,resizable=1');this.newWindow.focus();this.newWindow.opener=window;return false;"><img src="http://www.tagsa.aero:81/webim/b.php?i=webim&amp;lang=sp" border="0" alt=""/></a></li>
+<!-- / webim button -->
+<li class="widgetlieven"><script type="text/javascript">fecha("es")</script></li>
+<li>Hora local: <span id="horaActual"></span></li>
+<li class="widgetlieven">
+<!-- www.TuTiempo.net - Ancho:88px - Alto:20px -->
+<div id="TT_RyBwbxtBdIAa2aeA7fqjjjjjj9aA9f2"></div>
+<script type="text/javascript" src="http://www.tutiempo.net/widget/eltiempo_RyBwbxtBdIAa2aeA7fqjjjjjj9aA9f2"></script>
+</li>
+<li><p>Tel&eacute;fono de informaci&oacute;n<br /><span class="fonobig">(593)-4-216-9000</span></p></li>
+</ul>
+</div>
+
+</div>
+	
 <div class="cuerpocentral">
 
 <h1>Vuelos del d&iacute;a</h1>
